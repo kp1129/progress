@@ -8,7 +8,8 @@
 
 .display-todos {
   background-color: #fff;
-  width: 40rem;
+  width: 95vw;
+  max-width: 40rem;
   border-radius: 10px;
   padding: 5rem;
   display: flex;
@@ -30,5 +31,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 40rem;
+  width: 95vw;
+  max-width: 40rem;
 }

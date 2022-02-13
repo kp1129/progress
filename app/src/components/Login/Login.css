@@ -9,8 +9,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50rem;
-  margin: 20vh auto 0;
+  width: 95vw;
+  max-width: 50rem;
+  margin: 15vh auto 0;
   padding: 5rem;
   border-radius: 1rem;
 }
@@ -34,7 +35,8 @@
 form {
   display: flex;
   flex-direction: column;
-  width: 40rem;
+  width: 95vw;
+  max-width: 40rem;
   font-size: 1.75rem;
   margin: 2rem 0;
 }

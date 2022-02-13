@@ -1,7 +1,8 @@
 form {
   display: flex;
   flex-direction: column;
-  width: 40rem;
+  width: 95vw;
+  max-width: 40rem;
   padding: 5rem;
   border-radius: 1rem;
   font-size: 1.75rem;
