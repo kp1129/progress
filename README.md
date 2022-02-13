@@ -2,7 +2,7 @@
 
 ## Features
 
-- Sign up / sign in user flow
+- Sign up / sign in user flow, custom user greeting
 - Create and save new tasks
 - Click on tasks to mark them as completed
 - Logout
