@@ -1,0 +1,47 @@
+main {
+  background-color: #24a19c;
+  flex-grow: 1;
+}
+
+.login-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: 25vh auto 0;
+  padding: 5rem;
+  border-radius: 1rem;
+}
+
+.login-controls {
+  align-self: flex-start;
+}
+
+.login-controls > button {
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  font-size: 1.75rem;
+  margin: 2rem 0;
+}
+
+input {
+  margin: 1rem 0;
+  height: 2rem;
+}
+
+.login-submit {
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  background-color: #24a19c;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}

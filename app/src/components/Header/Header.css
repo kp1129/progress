@@ -1,0 +1,32 @@
+header {
+  height: 5rem;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+span {
+  font-size: 3rem;
+  color: #ffc600;
+}
+
+div {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+p {
+  font-size: 2.5rem;
+  color: gray;
+  margin-left: 5rem;
+}
+
+button {
+  border: 1px solid gray;
+  height: 3rem;
+  justify-self: flex-end;
+  cursor: pointer;
+}
