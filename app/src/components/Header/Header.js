@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <header>
-      <span>P</span>
+      <span>P |</span>
       {user && (
         <div>
           <p>Hello, {user.firstName}</p>

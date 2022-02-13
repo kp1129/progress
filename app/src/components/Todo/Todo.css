@@ -1,0 +1,12 @@
+.todo {
+  border-bottom: 1px dotted rgb(211, 201, 201);
+  padding: 0.5rem;
+  margin: 1rem auto;
+  object-fit: contain;
+  cursor: pointer;
+  color: gray;
+}
+
+.completed {
+  text-decoration: line-through;
+}

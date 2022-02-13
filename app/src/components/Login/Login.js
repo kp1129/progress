@@ -14,16 +14,17 @@ function LoginForm() {
   const [lastName, setLastName] = useState("");
 
   const handleSignUp = () => {
+    //   firebase auth, create user object, save to progress db
     auth
       .createUserWithEmailAndPassword(email, password)
       .then((userAuth) => {
-        const sessionUser = {
+        const newUser = {
           uid: userAuth.user.uid,
           email: userAuth.user.email,
           firstName,
           lastName,
         };
-        setUser(sessionUser);
+        setUser(newUser);
         return userAuth;
       })
       .then((userAuth) => {
@@ -99,13 +100,13 @@ function LoginForm() {
   };
 
   return (
-    <main>
+    <main className="login">
       <div className="login-container">
         <div className="login-controls">
-          <button onClick={() => setRegistration(false)} type="text">
+          <button className={registration ? "" : "active"} onClick={() => setRegistration(false)} type="text">
             Sign in
           </button>
-          <button onClick={() => setRegistration(true)} type="text">
+          <button className={registration ? "active" : ""} onClick={() => setRegistration(true)} type="text">
             Sign up
           </button>
         </div>

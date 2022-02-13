@@ -1,6 +1,5 @@
 header {
   height: 5rem;
-  border: 1px solid gray;
   display: flex;
   align-items: center;
   width: 100%;
@@ -9,7 +8,8 @@ header {
 
 span {
   font-size: 3rem;
-  color: #ffc600;
+  color: #ffd700;
+  border-bottom: 2px solid #ffd700;
 }
 
 div {
@@ -18,15 +18,22 @@ div {
   flex-grow: 1;
 }
 
-p {
-  font-size: 2.5rem;
+header p {
+  font-size: 2.25rem;
   color: gray;
-  margin-left: 5rem;
+  margin-left: 2rem;
+  align-self: flex-end;
 }
 
-button {
+header button {
   border: 1px solid gray;
   height: 3rem;
   justify-self: flex-end;
   cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+header button:active {
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
 }

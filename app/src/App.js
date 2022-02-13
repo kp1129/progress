@@ -8,7 +8,7 @@ import Login from "./components/Login/Login";
 
 
 function App() {
-  const { user, todos } = useMainContext();
+  const { user } = useMainContext();
   return (
     <div className="app">
       <Header />

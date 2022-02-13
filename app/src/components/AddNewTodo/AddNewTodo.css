@@ -1,0 +1,28 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  padding: 5rem;
+  border-radius: 1rem;
+  font-size: 1.75rem;
+  margin: 2rem 0;
+  background-color: #fff;
+}
+
+form.new-todo > input {
+  margin: 1rem 0;
+  height: 3rem;
+}
+
+.new-todo > button {
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: 2px solid #9da993;
+  cursor: pointer;
+  background-color: #d7dfb8;
+}
+
+.new-todo > button:active {
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+}
