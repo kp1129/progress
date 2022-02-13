@@ -20,26 +20,28 @@ function Dashboard() {
         setTodos(newTodos);
       });
   }, []);
+
   return (
     <main className="dashboard">
       <AddNewTodo />
 
-      {todos.length > 0 ? (<div className="display-todos">
-        {todos.map((todo) => (
+      {todos.length > 0 ? (
+        <div className="display-todos">
+          {todos.map((todo) => (
             <Todo
               key={todo.id}
               id={todo.id}
               completed={todo.completed}
               text={todo.text}
             />
-          ))
-        }
-      </div>) : (
-          <div className="display-instructions">
-            <p>You don't have any tasks to do yet!</p>
-            <p>- add new tasks using the form above </p>
-            <p>- click on them to mark them as done</p>
-          </div>
+          ))}
+        </div>
+      ) : (
+        <div className="display-instructions">
+          <p>You don't have any tasks to do yet!</p>
+          <p>- add new tasks using the form above </p>
+          <p>- click on them to mark them as done</p>
+        </div>
       )}
     </main>
   );
